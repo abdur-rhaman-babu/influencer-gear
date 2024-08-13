@@ -13,7 +13,7 @@
 ::root{
     --primary-color:color: rgb(58, 58, 58);
     --secondary-color:color: rgb(120, 120, 133);
-   
+   --bg-color:linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
 }
 
 .flex{
@@ -90,6 +90,22 @@
     background:url(../images/Circle\ design.svg);
 }
 
+
+/* --------------------company-section--------------------- */
+.company-section{
+    max-width:1110px;
+    margin:6.5rem auto;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+    padding:.1rem 0rem;
+}
+
+.company-area{
+    justify-content:center;
+    align-items:center;
+    gap:4rem;
+    background:#fff;
+    padding:2.2rem 4rem;
+}
 
 
 
