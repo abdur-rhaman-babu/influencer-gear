@@ -13,6 +13,7 @@
 ::root{
     --primary-color:color: rgb(58, 58, 58);
     --secondary-color:color: rgb(120, 120, 133);
+   
 }
 
 .flex{
@@ -23,7 +24,13 @@
 /* -----------------header-section------------------ */
 .navbar{
     justify-content:space-between;
-    padding:3.2rem 6%;
+    padding:3.2rem 12%;
+}
+
+.navbar .brand-name .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.125rem;
 }
 
 .nav-menu{
@@ -35,6 +42,54 @@
     font-weight: 600;
     line-height: 1.5rem;
 }
+
+/* ---------------------hero-section-------------------- */
+.hero-area{
+    align-items:center;
+    justify-content:center;
+    gap:8.5rem;
+}
+
+.hero-title{
+    color:var(--primary-color);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+}
+
+.hero-sub-title{
+    margin: 1rem 0 2rem 0;
+    color:var(--primary-color);
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.hero-text button{
+    background:none;
+    border:none;
+}
+
+.global-btn{
+    background-color:#E02C6D;
+    color:#fff;
+    padding:.6rem 1.5rem;
+    border-radius:3.2rem;
+    margin-right:.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.global-btn span{
+    margin-left:.6rem;
+}
+
+.hero-image{
+    background:url(../images/Circle\ design.svg);
+}
+
 
 
 
