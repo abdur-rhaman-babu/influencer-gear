@@ -26,6 +26,7 @@
 .navbar{
     justify-content:space-between;
     padding:3.2rem 12%;
+    align-items:center;
 }
 
 .navbar .brand-name .logo{
@@ -35,7 +36,7 @@
     line-height: 2.125rem;
 }
 
-.nav-menu{
+.main-menu{
     gap:2rem;
 }
 .nav-menu a{
@@ -46,8 +47,14 @@
     line-height: 1.5rem;
 }
 
+.add-cart{
+    margin-left:1.5rem;
+}
+
 /* ---------------------hero-section-------------------- */
 .hero-area{
+    max-width:1150px;
+    margin:0 auto;
     align-items:center;
     justify-content:center;
     gap:8.5rem;
@@ -93,6 +100,11 @@
 
 .hero-image{
     background:url(../images/Circle\ design.svg);
+}
+
+.bars-icon{
+    display:none;
+    font-size:1.5rem;
 }
 
 
@@ -296,4 +308,103 @@
     border-radius:50%;
 }
 
-/* ---------------- */
+/* ----------------mobile-responsive--------------------- */
+@media screen and (max-width:576px) {
+    /* -----------nav-bar-------------------- */
+    .bars-icon{
+        display: block;
+        color:var(--primary-color);
+    }
+    .main-menu{
+        display:none;
+    }
+    .brand-name .logo{
+        font-size:1rem;
+    }
+    .navbar{
+        padding:0 6%;
+    }
+    .add-cart{
+        margin-left:0px;
+        font-size:1.5rem;
+    }
+
+    /* ---------------hero-section--------------- */
+    .hero-area{
+        flex-direction:column-reverse;
+        gap:2rem;
+    }
+
+    .hero-text{
+        text-align:center;
+        padding:1rem;
+    }
+
+    .hero-title{
+        font-size: 2rem;
+        line-height:2.6rem;
+    }
+
+    .hero-image{
+        margin-top:2rem;
+        background: none;
+    }
+    .hero-image img{
+        margin-top:2rem;
+        width:80%;
+        margin-left:3.5rem;
+    }
+
+    /* -------------popular-section----------- */
+    .popular-section{
+        margin:1rem 0;
+    }
+    .popular-container{
+        grid-template-columns:1fr;
+        margin-left:1rem;
+    }
+
+    .popular-card{
+        width:95%;
+    }
+
+    /* -----------feature-section--------------- */
+    .feature-container{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+    .feature-container img{
+        width:95%;
+    }
+
+    .feature-title{
+        line-height:3rem;
+    }
+
+    .feature-text{
+        padding:0 .5rem;
+    }
+
+    /* ----------------company-section---------------- */
+    .company-section{
+        margin:2.5rem 0;
+    }
+    .company-area{
+        gap:1rem;
+        padding:1.5rem;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .company-area img{
+        width:20%;
+        padding-right:1rem;
+    }
+}
+
+/* ---------------responsive-tablet---------------- */
+@media screen and (min-width:576px) and (max-width:792px) {
+    .popular-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
